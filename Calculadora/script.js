@@ -73,13 +73,15 @@ igual.addEventListener("click", function(){
 arrow.addEventListener("click",function(){
     let number = arrow.innerText;
     let wnd = nWindow.innerText;
-    if(!["NaN","Math Error","0"].includes(wnd)){
+    if(!["NaN","Math Error"].includes(wnd)){
         if(number!=="0"){
-            nWindow.innerText = wnd.substr(0,wnd.length-1);
+            let comp = wnd.substr(0,wnd.length-1);
+            if(comp!=""){
+                nWindow.innerText = comp;
         }
     }
     
-});//0cuando se boora, borrar error ynan
+});
 
 btn.forEach(elem => {
 	elem.addEventListener("click", function() {
