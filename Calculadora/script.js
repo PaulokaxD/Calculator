@@ -39,8 +39,8 @@ division.addEventListener("click", function(){
 });
 
 igual.addEventListener("click", function(){
-    operando = parseInt(nWindow.innerText,10);
-    operado = parseInt(operado,10);
+    operando = parseFloat(nWindow.innerText,10);
+    operado = parseFloat(operado,10);
     switch(operador){
         case "+":
             nWindow.innerText = operado+operando;
