@@ -81,7 +81,7 @@ arrow.addEventListener("click",function(){
         }
     }
     
-});
+}});
 
 btn.forEach(elem => {
 	elem.addEventListener("click", function() {
