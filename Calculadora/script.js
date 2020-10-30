@@ -70,19 +70,17 @@ igual.addEventListener("click", function(){
     
 });
 
-arrow.addEventListener("click",function(){
-    let number = arrow.innerText;
+arrow.addEventListener("click", function() {
     let wnd = nWindow.innerText;
-    if(!["NaN","Math Error"].includes(wnd)){
-        if(number!=="0"){
-            let comp = wnd.substr(0,wnd.length-1);
-            if(comp!=""){
-                nWindow.innerText = comp;
+    if (!["NaN", "Math Error"].includes(wnd)) {
+        let comp = wnd.substr(0, wnd.length - 1);
+        if (comp != "") {
+            nWindow.innerText = comp;
+        } else if (comp == "") {
+            nWindow.innerText = "0";
         }
     }
-    
 });
-
 btn.forEach(elem => {
 	elem.addEventListener("click", function() {
 	    let number = elem.innerText;
